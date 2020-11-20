@@ -3917,6 +3917,11 @@
 				{
 					"bind": "/Logs/JDownloader",
 					"container": "/opt/JDownloader/logs"
+				},
+				{
+					"bind":"/etc/localtime",
+					"container":"/etc/localtime",
+					"readonly": true
 				}
 			]
 		}
