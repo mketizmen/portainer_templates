@@ -3882,18 +3882,15 @@
 					"name": "PGID"
 				},
 				{
-					"default":"JDownloader User Email",
-					"label":"MYJD_USER",
+					"label":"JDownloader User",
 					"name":"MYJD_USER"
 				},
 				{
-					"default":"JDownloader Password",
-					"label":"MYJD_PASSWORD",
+					"label":"Password",
 					"name":"MYJD_PASSWORD"
 				},
 				{
-					"default":"Device Name",
-					"label":"MYJD_DEVICE_NAME",
+					"label":"Device Name",
 					"name":"MYJD_DEVICE_NAME"
 				}
 
