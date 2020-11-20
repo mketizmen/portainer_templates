@@ -3910,7 +3910,6 @@
 			"type": 1,
 			"volumes": [
 				{
-                    
 					"bind": "/ConfigsFolder/JDownloader/config",
 					"container": "/opt/JDownloader/cfg"
 				},
@@ -3918,7 +3917,7 @@
 					"bind": "/DownloadsFolder",
 					"container": "/opt/JDownloader/Downloads"
 				},
-                {
+				{
 					"bind": "/Logs/JDownloader",
 					"container": "/opt/JDownloader/logs"
 				}
