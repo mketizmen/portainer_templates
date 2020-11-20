@@ -3739,65 +3739,6 @@
 					"container": "/downloads"
 				}
 			]
-		},
-		{
-			"categories": [
-				"Downloaders"
-			],
-			"description": "JDownloader ",
-			"env": [
-				{
-					"default": "1002",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				},
-                {
-                    "default":"JDownloader User Email",
-                    "label":"MYJD_USER",
-                    "name":"MYJD_USER"
-                },                
-                {
-                    "default":"JDownloader Password",
-                    "label":"MYJD_PASSWORD",
-                    "name":"MYJD_PASSWORD"
-                },        
-                {
-                    "default":"Device Name",
-                    "label":"MYJD_DEVICE_NAME",
-                    "name":"MYJD_DEVICE_NAME"
-                },
-
-			],
-			"image": "jaymoulin/jdownloader:latest",
-			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/JDownloader-256.png",
-			"name": "jdownloader",
-			"platform": "linux",
-			"ports": [
-				"3129:3129/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "jdownloader",
-			"type": 1,
-			"volumes": [
-				{
-                    
-					"bind": "/ConfigsFolder/JDownloader/config",
-					"container": "/opt/JDownloader/cfg"
-				},
-				{
-					"bind": "/DownloadsFolder",
-					"container": "/opt/JDownloader/Downloads"
-				},
-                {
-					"bind": "/Logs/JDownloader",
-					"container": "/opt/JDownloader/logs"
-				}
-			]
 		}
 	]
 }
