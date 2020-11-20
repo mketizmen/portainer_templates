@@ -2731,7 +2731,7 @@
 		},
 		{
 			"categories": [
-				"Backup:",
+				"Backup",
 				"Cloud",
 				"Other",
 				"Tools"
@@ -3009,7 +3009,7 @@
 		},
 		{
 			"categories": [
-				"Backup:",
+				"Backup",
 				"Cloud",
 				"Other",
 				"Tools"
@@ -3792,6 +3792,37 @@
 				{
 					"bind": "/Logs/JDownloader",
 					"container": "/opt/JDownloader/logs"
+				},
+				{
+					"bind":"/etc/localtime",
+					"container":"/etc/localtime",
+					"readonly": true
+				}
+			]
+		},
+		{
+			"categories": [
+				"CCTV"
+			],
+			"description": "motionEyeOS is a Linux distribution that turns a single-board computer into a video surveillance system.  ",
+			"image": "ccrisan/motioneye:master-amd64",
+			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/motioneye-256x256.png",
+			"name": "Motioneye",
+			"platform": "linux",
+			"ports": [
+				"8765:8765/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "motionEyeOS",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/ConfigsFolder/Motioneye/config",
+					"container": "/etc/motioneye"
+				},
+				{
+					"bind": "/Data/Motioneye",
+					"container": "/var/lib/motioneye"
 				},
 				{
 					"bind":"/etc/localtime",
