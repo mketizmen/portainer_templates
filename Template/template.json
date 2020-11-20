@@ -3757,17 +3757,17 @@
 					"name": "PGID"
 				},
                 {
-                    "default":"JDownloader User Email"
+                    "default":"JDownloader User Email",
                     "label":"MYJD_USER",
                     "name":"MYJD_USER"
                 },                
                 {
-                    "default":"JDownloader Password"
+                    "default":"JDownloader Password",
                     "label":"MYJD_PASSWORD",
                     "name":"MYJD_PASSWORD"
                 },        
                 {
-                    "default":"Device Name"
+                    "default":"Device Name",
                     "label":"MYJD_DEVICE_NAME",
                     "name":"MYJD_DEVICE_NAME"
                 },
