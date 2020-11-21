@@ -5036,6 +5036,13 @@
 			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/nodejs.png",
 			"name": "NodeJs",
 			"platform": "linux",
+			"env":[
+				{
+					"label":"NODE_ENV",
+					"name":"NODE_ENV",
+					"default":"production"
+				}
+			],
 			"ports": [
 				"8081:8081/tcp"
 			],
