@@ -5026,6 +5026,30 @@
 					"readonly": true
 				}
 			]
+		},
+		{
+			"categories": [
+				"webserver"
+			],
+			"description": "NodeJs Server",
+			"image": "node:alpine",
+			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/nodejs.png",
+			"name": "NodeJs",
+			"platform": "linux",
+			"ports": [
+				"8081:8081/tcp"
+			],
+			"network": "host",
+			"restart_policy": "unless-stopped",
+			"title": "NodeJs",
+			"type": 1,
+			"command":"cd /home/node/app|npm start",
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/NodeApp/",
+					"container": "/home/node/app"
+				}
+			]
 		}
 	]
 }
