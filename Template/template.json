@@ -5076,8 +5076,8 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/root",
-					"container": "remotely-server-data"
+					"bind": "remotely-server-data",
+					"container": "/root"
 				}
 			]
 		}
