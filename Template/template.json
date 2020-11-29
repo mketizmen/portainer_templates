@@ -5064,7 +5064,7 @@
 			],
 			"description": "Remotely",
 			"image": "virusbrain/remotelyserver:latest",
-			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/nodejs.png",
+			"logo": "https://raw.githubusercontent.com/lucent-sea/Remotely/master/Server/wwwroot/images/Remotely_Icon.png",
 			"name": "Remotely",
 			"platform": "linux",
 			"ports": [
