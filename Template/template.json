@@ -5057,6 +5057,29 @@
 					"container": "/home/node/app"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other","Tools"
+			],
+			"description": "Remotely",
+			"image": "virusbrain/remotelyserver:latest",
+			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/nodejs.png",
+			"name": "Remotely",
+			"platform": "linux",
+			"ports": [
+				"8087:80/tcp"
+			],
+			"network": "bridge",
+			"restart_policy": "unless-stopped",
+			"title": "Remotely",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/root",
+					"container": "remotely-server-data"
+				}
+			]
 		}
 	]
 }
