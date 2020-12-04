@@ -5070,6 +5070,43 @@
 					"container": "/root"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other","Tools"
+			],
+			"description": "Handbrake video conversation tool",
+			"image": "jlesage/handbrake:latest",
+			"logo": "https://images.weserv.nl/?url=raw.githubusercontent.com/jlesage/docker-templates/master/jlesage/images/handbrake-icon.png&w=200",
+			"name": "Handbrake",
+			"platform": "linux",
+			"ports": [
+				"5800:5800/tcp"
+			],
+			"network": "bridge",
+			"restart_policy": "unless-stopped",
+			"title": "Handbrake",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/docker/appdata/handbrake",
+					"container": "/config"
+				},
+				{
+					"bind":"$HOME/HandBrake/watch",
+					"container":"/watch"
+				},
+				{
+					"bind":"$HOME/HandBrake/output",
+					"container":"/output"
+				},
+				{
+					"bind":"$HOME",
+					"container":"/storage",
+					"readonly": true
+				}
+
+			]
 		}
 	]
 }
