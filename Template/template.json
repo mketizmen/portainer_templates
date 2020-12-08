@@ -5141,7 +5141,7 @@
 					"container":"/opt/notebooks"
 				}
 			],
-			"command": "/bin/bash -c \"/opt/conda/bin/conda install jupyter -y --quiet&&/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --port=8888 --no-browser\""
+			"command": "/bin/bash -c \"/opt/conda/bin/conda install jupyter -y --quiet&&/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip=\"*\" --port=8888 --no-browser\""
 		}
 	]
 }
