@@ -5139,10 +5139,6 @@
 				{
 					"bind":"/ConfigsFolder/Anaconda/Notebooks",
 					"container":"/opt/notebooks"
-				},
-				{
-					"bind":"/ConfigsFolder/Anaconda/kernels",
-					"container":"/opt/anaconda3/share/jupyter/kernels/"
 				}
 			],
 			
