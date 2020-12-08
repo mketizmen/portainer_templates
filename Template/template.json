@@ -5117,6 +5117,25 @@
 				}
 
 			]
+		},
+		{
+			"categories": [
+				"Other","Tools"
+			],
+			"interactive": true,
+			"description": "Anaconda",
+			"image": "continuumio/anaconda3:latest",
+			"logo": "https://avatars2.githubusercontent.com/u/1158637?s=200&v=4",
+			"name": "Anaconda",
+			"platform": "linux",
+			"ports": [
+				"8888:8888/tcp"
+			],
+			"network": "bridge",
+			"restart_policy": "unless-stopped",
+			"title": "Anaconda",
+			"type": 1,
+			"command": "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser",
 		}
 	]
 }
