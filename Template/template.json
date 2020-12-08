@@ -5139,10 +5139,14 @@
 				{
 					"bind":"/ConfigsFolder/Anaconda/Notebooks",
 					"container":"/opt/notebooks"
+				},
+				{
+					"bind":"/ConfigsFolder/Anaconda/kernels",
+					"container":"/opt/anaconda3/share/jupyter/kernels/"
 				}
 			],
 			
-			"command": "/bin/bash -c \"/opt/conda/bin/conda install jupyter -y --quiet&&/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root\""
+			"command": "/bin/bash -c \"/opt/conda/bin/conda install -c conda-forge jupyter_latex_envs nbconvert nbconvert[webpdf] jupyter -y --quiet&&/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root\""
 		}
 	]
 }
