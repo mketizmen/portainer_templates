@@ -5157,6 +5157,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Cups",
 			"type": 1,
+			"privileged": true,
 			"volumes":[
 				{
 					"bind":"/ConfigsFolder/CUPS/services",
@@ -5177,6 +5178,83 @@
 					"default": "CUPSPASSWORD",
 					"label": "CUPSPASSWORD",
 					"name": "CUPSPASSWORD"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders"
+			],
+			"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+			"image": "markusmcnugen/qbittorrentvpn:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/qbittorrent-icon.png",
+			"name": "qBittorrent + VPN",
+			"platform": "linux",
+			"network": "bridge",
+			"restart_policy": "unless-stopped",
+			"title": "qBittorrentVPN",
+			"type": 1,
+			"privileged": true,
+			"ports":[
+				"8080:8080",
+				"6881:6881",
+				"6881:6881/udp"
+			],
+			"volumes":[
+				{
+					"bind":"/ConfigsFolder/qBittorrent/downloads",
+					"container":"/downloads"
+				},
+				{
+					"bind":"/ConfigsFolder/qBittorrent/config",
+					"container":"/config"
+				}
+			],
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "yes",
+					"label": "VPN_ENABLED",
+					"name": "VPN_ENABLED"
+				},
+				{
+					"default": "VPN_USERNAME",
+					"label": "VPN_USERNAME",
+					"name": "VPN_USERNAME"
+				},				
+				{
+					"default": "VPN_PASSWORD",
+					"label": "VPN_PASSWORD",
+					"name": "VPN_PASSWORD"
+				},
+				{
+					"default": 8080,
+					"label": "WEBUI_PORT_ENV",
+					"name": "WEBUI_PORT_ENV"
+				},				
+				{
+					"default": 6881,
+					"label": "INCOMING_PORT_ENV",
+					"name": "INCOMING_PORT_ENV"
+				},
+				{
+					"default": "192.168.1.0/24",
+					"label": "LAN_NETWORK",
+					"name": "LAN_NETWORK"
+				},
+				{
+					"default": "8.8.8.8,8.8.4.4",
+					"label": "NAME_SERVERS",
+					"name": "NAME_SERVERS"
 				}
 			]
 		}
