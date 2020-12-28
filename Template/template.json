@@ -5268,6 +5268,18 @@
 				"10000:10000/tcp",
 				"10001:10001/tcp"
 			],
+			"volumes":[
+				{
+					"bind":"/dev/bus/usb/002",
+					"container":"/dev/bus/usb/002",
+					"readonly": true
+				},
+				{
+					"bind":"/dev/bus/usb/001",
+					"container":"/dev/bus/usb/001",
+					"readonly": true
+				}
+			],
 			"env": [
 				{
 					"default": "192.168.0.0/24",
