@@ -5138,6 +5138,49 @@
 				"Other","Tools"
 			],
 			"interactive": true,
+			"description": "SANED Scan Server",
+			"image": "sesceu/saned:latest",
+			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/airprint.jpg",
+			"name": "SANED",
+			"platform": "linux",
+			"network": "host",
+			"restart_policy": "unless-stopped",
+			"title": "SANED",
+			"type": 1,
+			"privileged": true,
+			// "volumes":[
+			// 	{
+			// 		"bind":"/ConfigsFolder/CUPS/services",
+			// 		"container":"/services"
+			// 	},
+			// 	{
+			// 		"bind":"/ConfigsFolder/CUPS/config",
+			// 		"container":"/config"
+			// 	}
+			// ],
+			"env": [
+				{
+					"default": "192.168.0.0/24",
+					"label": "SANED_ACL",
+					"name": "SANED_ACL"
+				},
+				{
+					"default": "epson2:libusb:002:007",
+					"label": "SANED_DEVICE",
+					"name": "SANED_DEVICE"
+				},
+				{
+					"default": "",
+					"label": "SANED_DLL",
+					"name": "SANED_DLL"
+				}
+			]
+		},		
+		{
+			"categories": [
+				"Other","Tools"
+			],
+			"interactive": true,
 			"description": "Cups Print Server",
 			"image": "chuckcharlie/cups-avahi-airprint:latest",
 			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/airprint.jpg",
