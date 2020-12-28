@@ -5132,44 +5132,6 @@
 				}
 			],
 			"command": "/bin/bash -c \"apt install texlive-xetex -y||/opt/conda/bin/conda install -c conda-forge jupyter_latex_envs pandoc nbconvert nbconvert[webpdf] jupyter -y --quiet&&/opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root\""
-		},
-		{
-			"categories": [
-				"Other","Tools"
-			],
-			"interactive": true,
-			"description": "SANED Scan Server",
-			"image": "sesceu/saned:latest",
-			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/airprint.jpg",
-			"name": "SANED",
-			"platform": "linux",
-			"network": "bridge",
-			"restart_policy": "unless-stopped",
-			"title": "SANED",
-			"type": 1,
-			"privileged": true,
-			"ports":[
-				"6566:6566/tcp",
-				"10000:10000/tcp",
-				"10001:10001/tcp"
-			],
-			"env": [
-				{
-					"default": "192.168.0.0/24",
-					"label": "SANED_ACL",
-					"name": "SANED_ACL"
-				},
-				{
-					"default": "epson2:libusb:002:007",
-					"label": "SANED_DEVICE",
-					"name": "SANED_DEVICE"
-				},
-				{
-					"default": "",
-					"label": "SANED_DLL",
-					"name": "SANED_DLL"
-				}
-			]
 		},		
 		{
 			"categories": [
