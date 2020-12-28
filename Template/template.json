@@ -5278,7 +5278,12 @@
 					"bind":"/dev/bus/usb/001",
 					"container":"/dev/bus/usb/001",
 					"readonly": true
+				},
+				{
+					"bind":"/ScannedDocs",
+					"container":"/ScannedDocs"
 				}
+
 			],
 			"env": [
 				{
