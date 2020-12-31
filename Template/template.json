@@ -5262,7 +5262,6 @@
 			"categories": [
 				"Other","Tools"
 			],
-			"interactive": true,
 			"description": "SANED Scan Server",
 			"image": "sesceu/saned",
 			"logo": "https://raw.githubusercontent.com/mketizmen/portainer_templates/master/Images/airprint.jpg",
@@ -5280,13 +5279,8 @@
 			],
 			"volumes":[
 				{
-					"bind":"/dev/bus/usb/002",
-					"container":"/dev/bus/usb/002",
-					"readonly": true
-				},
-				{
-					"bind":"/dev/bus/usb/001",
-					"container":"/dev/bus/usb/001",
+					"bind":"/dev/bus/usb",
+					"container":"/dev/bus/usb",
 					"readonly": true
 				},
 				{
@@ -5310,6 +5304,11 @@
 					"default": "",
 					"label": "SANED_DLL",
 					"name": "SANED_DLL"
+				},
+				{
+					"default": 2,
+					"label": "SANED_LOG_LEVEL",
+					"name": "SANED_LOG_LEVEL"
 				}
 			]
 		}
