@@ -5301,6 +5301,63 @@
 					"name": "SANED_LOG_LEVEL"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other","Tools"
+			],
+			"description": "Homebridge",
+			"image": "oznu/homebridge:ubuntu",
+			"logo": "https://raw.githubusercontent.com/homebridge/branding/master/logos/homebridge-color-round-stylized.png",
+			"name": "Homebridge",
+			"platform": "linux",
+			"network": "host",
+			"restart_policy": "unless-stopped",
+			"title": "Homebridge",
+			"type": 1,
+			"privileged": true,
+			"volumes":[
+				{
+					"bind":"/ConfigsFolder/homebridge",
+					"container":"/homebridge"
+				}
+			],
+			"env": [
+				{
+					"default": "8581",
+					"label": "HOMEBRIDGE_CONFIG_UI_PORT",
+					"name": "HOMEBRIDGE_CONFIG_UI_PORT"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other","Tools"
+			],
+			"description": "Mosquitto is an open source implementation of a server for version 5.0, 3.1.1, and 3.1 of the MQTT protocol. It also includes a C and C++ client library, and the mosquitto_pub and mosquitto_sub utilities for publishing and subscribing.",
+			"image": "eclipse-mosquitto",
+			"logo": "https://mosquitto.org/images/mosquitto-text-side-28.png",
+			"name": "mosquitto",
+			"platform": "linux",
+			"network": "host",
+			"restart_policy": "unless-stopped",
+			"title": "mosquitto",
+			"type": 1,
+			"privileged": true,
+			"volumes":[
+				{
+					"bind":"/ConfigsFolder/mosquitto/config",
+					"container":"/mosquitto/conf"
+				},
+				{
+					"bind":"/ConfigsFolder/mosquitto/data",
+					"container":"/mosquitto/data"
+				},
+				{
+					"bind":"/ConfigsFolder/mosquitto/log",
+					"container":"/mosquitto/log"
+				}
+			]
 		}
 	]
 }
