@@ -5363,7 +5363,7 @@
 				}
 			]
 		},
-	        {
+	    {
 			"categories": [
 				"Other","Tools"
 			],
@@ -5378,7 +5378,7 @@
 			"type": 1,
 			"privileged": true,
 			"ports":[
-				"8191:8191/tcp",
+				"8191:8191/tcp"
 			],
 			"env": [
 				{
@@ -5403,7 +5403,7 @@
 				}
 			]
 		},
-	      {
+	    {
 			"categories": [
 				"Other","Tools"
 			],
@@ -5418,7 +5418,7 @@
 			"type": 1,
 			"privileged": true,
 			"ports":[
-				"9696:9696/tcp",
+				"9696:9696/tcp"
 			],
 			"volumes":[
 				{
