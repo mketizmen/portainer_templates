@@ -1391,7 +1391,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Bitwarden-rs",
+					"bind": "/portainer/Files/AppData/Config/Bitwarden-rs/Data",
+					"container": "/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Bitwarden-rs/Config",
 					"container": "/config"
 				}
 			]
@@ -5366,6 +5370,87 @@
 				{
 					"bind":"/ConfigsFolder/mosquitto/log",
 					"container":"/mosquitto/log"
+				}
+			]
+		},
+	        {
+			"categories": [
+				"Other","Tools"
+			],
+			"description": "flaresolverr",
+			"image": "flaresolverr/flaresolverr:latest",
+			"logo": "https://raw.githubusercontent.com/FlareSolverr/FlareSolverr/master/resources/flaresolverr_logo.png",
+			"name": "flaresolverr",
+			"platform": "linux",
+			"network": "bridge",
+			"restart_policy": "unless-stopped",
+			"title": "flaresolverr",
+			"type": 1,
+			"privileged": true,
+			"ports":[
+				"8191:8191/tcp",
+			],
+			"env": [
+				{
+					"default": "Europe/Istanbul",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "none",
+					"label": "CAPTCHA_SOLVER",
+					"name": "CAPTCHA_SOLVER"
+				},
+				{
+					"default": "false",
+					"label": "LOG_HTML",
+					"name": "LOG_HTML"
+				},
+				{
+					"default": "info",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				}
+			]
+		},
+	      {
+			"categories": [
+				"Other","Tools"
+			],
+			"description": "prowlarr",
+			"image": "lscr.io/linuxserver/prowlarr:develop",
+			"logo": "https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/Logo/128.png",
+			"name": "prowlarr",
+			"platform": "linux",
+			"network": "bridge",
+			"restart_policy": "unless-stopped",
+			"title": "prowlarr",
+			"type": 1,
+			"privileged": true,
+			"ports":[
+				"9696:9696/tcp",
+			],
+			"volumes":[
+				{
+					"bind":"/path/to/data/prowlarr",
+					"container":"/config"
+				}
+			],
+			"env": [
+				{
+					"default": "Europe/Istanbul",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{      
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
 				}
 			]
 		}
