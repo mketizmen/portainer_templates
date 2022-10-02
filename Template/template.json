@@ -1665,9 +1665,9 @@
 					"name": "PUID"
 				},
 				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "GUID"
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
 				},
 				{
 					"label": "TZ",
