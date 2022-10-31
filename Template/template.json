@@ -5485,7 +5485,24 @@
 				{
 					"label": "PORT",
 					"name": "PORT"
+				},
+				{
+					"label": "document_data",
+					"name": "Data Volume"
+				},
+				{
+					"label": "document_log",
+					"name": "Log Volume"
+				},
+				{
+					"label": "app_data",
+					"name": "NextCloud data folder"
+				},
+				{
+					"label": "db_data",
+					"name": "Database data folder"
 				}
+				
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
 			"name": "nextcloud with OnlyOffice",
