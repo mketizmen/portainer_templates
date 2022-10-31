@@ -3,7 +3,7 @@ version: "2"
 services:
   nextcloud:
     image: nextcloud:fpm
-    container_name: nextcloud with OnlyOffice (Postgresql)
+    container_name: nextcloud
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
