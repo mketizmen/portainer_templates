@@ -5477,6 +5477,7 @@
 				{
 					"label": "TZ",
 					"name": "TZ"
+					"default": "Europe/Istanbul"
 				},
 				{
 					"label": "DATABASE_PASSWORD",
