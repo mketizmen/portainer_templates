@@ -50,6 +50,7 @@ services:
       - DB_PWD=${DATABASE_PASSWORD}
       - DB_HOST=nextcloud_db
       - DB_NAME=nextcloud_db
+      - DB_USER=nextcloud
     volumes:
       - ${document_data}:/var/www/onlyoffice/Data
       - ${document_log}:/var/log/onlyoffice
