@@ -5500,7 +5500,7 @@
 				
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
-			"name": "nextcloud with OnlyOffice",
+			"name": "Nextcloud_with_office",
 			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
 			"platform": "linux",
 			"repository": {
