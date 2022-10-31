@@ -5466,7 +5466,7 @@
 				},
 				{
 					"label": "TZ",
-					"name": "TZ"
+					"name": "TZ",
 					"default": "Europe/Istanbul"
 				},
 				{
