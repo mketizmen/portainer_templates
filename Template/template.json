@@ -5501,6 +5501,10 @@
 				{
 					"label": "db_data",
 					"name": "Database data folder"
+				},
+				{
+					"label": "data",
+					"name": "User files data folder"
 				}
 				
 			],
