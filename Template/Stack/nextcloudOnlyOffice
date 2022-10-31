@@ -1,0 +1,60 @@
+---
+version: "2"
+services:
+  nextcloud:
+    image: nextcloud:fpm
+    container_name: nextcloud with OnlyOffice (Postgresql)
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - POSTGRES_DB=nextcloud_db
+      - POSTGRES_USER=nextcloud
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_HOST=nextcloud_db
+    volumes:
+      - app_data:/var/www/html
+    ports:
+      - ${PORT}:9000
+      - ${PORT}:80
+    restart: unless-stopped
+    depends_on:
+      - nextcloud_db
+      - onlyoffice
+  nextcloud_db:
+    image: postgres:alpine
+    container_name: nextcloud_db
+    hostname: nextcloud_db
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - POSTGRES_DB=nextcloud_db
+      - POSTGRES_USER=nextcloud
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - /portainer/AppData/Config/Nextcloud/DB:/config
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+  onlyoffice:
+    image: onlyoffice/documentserver
+    container_name: onlyoffice
+    ports:
+      - ${PORT}:80
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+      - DB_TYPE=postgres
+      - DB_PWD=${DATABASE_PASSWORD}
+      - DB_HOST=nextcloud_db
+      - DB_NAME=nextcloud_db
+    volumes:
+      - document_data:/var/www/onlyoffice/Data
+      - document_log:/var/log/onlyoffice
+    restart: unless-stopped
+volumes:
+  document_data:Configs/document_data
+  document_log:Configs/document_log
+  app_data:Configs/app_data
+  db_data:Configs/db_data
