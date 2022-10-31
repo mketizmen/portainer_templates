@@ -14,8 +14,8 @@ services:
       - POSTGRES_HOST=nextcloud_db
       - NEXTCLOUD_DATA_DIR=/All_Data
     volumes:
-      - app_data:/var/www/html
-      - data:/All_Data
+      - ${app_data}:/var/www/html
+      - ${data}:/All_Data
     ports:
       - ${PORT}:9000
     restart: unless-stopped
@@ -34,7 +34,7 @@ services:
       - POSTGRES_USER=nextcloud
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - ${db_data}:/var/lib/postgresql/data
     restart: unless-stopped
   onlyoffice:
     image: onlyoffice/documentserver
@@ -51,12 +51,6 @@ services:
       - DB_HOST=nextcloud_db
       - DB_NAME=nextcloud_db
     volumes:
-      - document_data:/var/www/onlyoffice/Data
-      - document_log:/var/log/onlyoffice
+      - ${document_data}:/var/www/onlyoffice/Data
+      - ${document_log}:/var/log/onlyoffice
     restart: unless-stopped
-volumes:
-  document_data:${document_data}
-  document_log:${document_log}
-  app_data:${app_data}
-  data:${data}
-  db_data:${db_data}
