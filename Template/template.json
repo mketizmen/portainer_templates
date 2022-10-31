@@ -5487,24 +5487,24 @@
 					"name": "PORT"
 				},
 				{
-					"label": "document_data",
-					"name": "Data Volume"
+					"name": "document_data",
+					"label": "Data Volume"
 				},
 				{
-					"label": "document_log",
-					"name": "Log Volume"
+					"name": "document_log",
+					"label": "Log Volume"
 				},
 				{
-					"label": "app_data",
-					"name": "NextCloud data folder"
+					"name": "app_data",
+					"label": "NextCloud data folder"
 				},
 				{
-					"label": "db_data",
-					"name": "Database data folder"
+					"name": "db_data",
+					"label": "Database data folder"
 				},
 				{
-					"label": "data",
-					"name": "User files data folder"
+					"name": "data",
+					"label": "User files data folder"
 				}
 				
 			],
