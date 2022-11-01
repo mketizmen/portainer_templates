@@ -2,7 +2,7 @@
 version: "2"
 services:
   nextcloud:
-    image: nextcloud:fpm
+    image: nextcloud
     container_name: nextcloud_with_OnlyOffice
     environment:
       - PUID=${PUID}
@@ -16,9 +16,8 @@ services:
     volumes:
       - ${app_data}:/var/www/html
       - ${data}:/All_Data
-    expose:
-      - '9000'
-      - '80'
+    ports:
+      - ${PORT}:80
     restart: unless-stopped
     depends_on:
       - nextcloud_db
@@ -36,17 +35,6 @@ services:
     volumes:
       - ${db_data}:/var/lib/postgresql/data
     restart: unless-stopped
-  nginx:
-    container_name: nextcloud-nginx-server
-    image: nginx
-    restart: always
-    ports:
-      - ${PORT}:80
-    volumes:
-      - ./nginx.conf:/etc/nginx/conf.d:ro
-      - ${app_data}:/var/www/html
-    volumes_from:
-      - nextcloud
   onlyoffice:
     image: onlyoffice/documentserver
     container_name: onlyoffice
