@@ -5478,20 +5478,8 @@
 					"name": "PORT"
 				},
 				{
-					"name": "document_data",
-					"label": "Onlyoffice Data Volume"
-				},
-				{
-					"name": "document_log",
-					"label": "Onlyoffice Log Volume"
-				},
-				{
 					"name": "app_data",
 					"label": "NextCloud data folder"
-				},
-				{
-					"name": "db_data",
-					"label": "Database data folder"
 				},
 				{
 					"name": "data",
