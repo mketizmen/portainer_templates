@@ -22,8 +22,6 @@ services:
     restart: unless-stopped
     depends_on:
       - nextcloud_db
-      - onlyoffice
-      - nginx
   nextcloud_db:
     image: postgres:alpine
     container_name: nextcloud_db
