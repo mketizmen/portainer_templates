@@ -5489,11 +5489,11 @@
 				},
 				{
 					"name": "document_data",
-					"label": "Data Volume"
+					"label": "Onlyoffice Data Volume"
 				},
 				{
 					"name": "document_log",
-					"label": "Log Volume"
+					"label": "Onlyoffice Log Volume"
 				},
 				{
 					"name": "app_data",
@@ -5505,7 +5505,7 @@
 				},
 				{
 					"name": "data",
-					"label": "User files data folder"
+					"label": "NextCloud user files data folder"
 				}
 				
 			],
