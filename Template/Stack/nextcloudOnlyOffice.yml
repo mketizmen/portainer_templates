@@ -8,8 +8,8 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
-      - POSTGRES_DB=nextcloud_db
-      - POSTGRES_USER=nextcloud
+      - POSTGRES_DB=nextcloud
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
       - POSTGRES_HOST=nextcloud_db
       - NEXTCLOUD_DATA_DIR=/All_Data
@@ -30,7 +30,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
       - POSTGRES_DB=nextcloud_db
-      - POSTGRES_USER=nextcloud
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
     volumes:
       - ${app_data}/db:/var/lib/postgresql/data
@@ -48,7 +48,8 @@ services:
       - DB_TYPE=postgres
       - DB_PWD=${DATABASE_PASSWORD}
       - DB_HOST=nextcloud_db
-      - DB_NAME=nextcloud_db
+      - DB_NAME=nextcloud
+      - DB_USER=postgres
     volumes:
       - ${app_data}/officeData:/var/www/onlyoffice/Data
       - ${app_data}/officeLog:/var/log/onlyoffice
