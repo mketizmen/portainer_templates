@@ -12,10 +12,10 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
       - POSTGRES_HOST=nextcloud_db
-      - NEXTCLOUD_DATA_DIR=/All_Data
+      - NEXTCLOUD_DATA_DIR=/var/www/html/data
     volumes:
       - ${app_data}/appdata:/var/www/html
-      - ${data}:/All_Data
+      - ${data}:/var/www/html/data
     ports:
       - ${PORT}:80
     restart: unless-stopped
