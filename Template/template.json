@@ -4843,7 +4843,17 @@
           "label": "LANCACHE_IP",
           "name": "LANCACHE_IP"
         },
-        {
+	{
+          "default": 80,
+          "label": "PORT",
+          "name": "PORT"
+        },
+	{
+          "default": 443,
+          "label": "SSLPORT",
+          "name": "SSLPORT"
+        },
+	{
 	  "default": "192.168.1.x",
           "label": "DNS_BIND_IP",
           "name": "DNS_BIND_IP"
