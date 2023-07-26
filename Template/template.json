@@ -4834,7 +4834,7 @@
 	        },
 	        {
 	          "text": "false",
-	          "value": "false"
+	          "value": false
 	        }
 	      ]
         },
