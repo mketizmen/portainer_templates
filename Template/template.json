@@ -4837,7 +4837,7 @@
 	          "text": "false",
 	          "value": "false"
 	        }
-	      ],
+	      ]
         },
         {
           "default": "192.168.1.x",
