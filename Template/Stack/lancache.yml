@@ -13,8 +13,8 @@ services:
     image: lancachenet/monolithic:latest
     restart: unless-stopped
     ports:
-      - 80:80/tcp
-      - 443:443/tcp
+      - ${PORT}:80/tcp
+      - ${SSLPORT}:443/tcp
     volumes:
       - ${CACHE_ROOT}/cache:/data/cache
       - ${CACHE_ROOT}/logs:/data/logs
