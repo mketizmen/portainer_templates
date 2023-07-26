@@ -4825,7 +4825,7 @@
       "env": [
         {
           "label": "USE_GENERIC_CACHE",
-          "name": "USE_GENERIC_CACHE"
+          "name": "USE_GENERIC_CACHE",
 	  "select": [
 	        {
 	          "text": "true",
