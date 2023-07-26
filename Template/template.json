@@ -5497,6 +5497,77 @@
 			},
 			"title": "Nextcloud with OnlyOffice",
 			"type": 3
-		}
+		},
+	{
+			"categories": [
+				"cache",
+				"network",
+				"Tools",
+				"Other",
+				"Web"
+			],
+			"description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+			"env": [
+				{
+					"default": "true",
+					"label": "USE_GENERIC_CACHE",
+					"name": "USE_GENERIC_CACHE"
+				},
+				{
+					"default": "192.168.1.x",
+					"label": "LANCACHE_IP",
+					"name": "LANCACHE_IP"
+				},
+				{
+					"label": "DNS_BIND_IP",
+					"name": "DNS_BIND_IP"
+				},
+				{
+					"default": "1.1.1.1",					
+					"label": "UPSTREAM_DNS",
+					"name": "UPSTREAM_DNS"
+				},
+				{
+					"default":"1000g",
+					"label": "CACHE_DISK_SIZE",
+					"name": "CACHE_DISK_SIZE"
+				},
+				{
+					"default":"250m",					
+					"label": "CACHE_INDEX_SIZE",
+					"name": "CACHE_INDEX_SIZE"
+				},
+				{
+					"default":"365d",					
+					"label": "CACHE_MAX_AGE",
+					"name": "CACHE_MAX_AGE"
+				},
+				{
+					"default":"/mnt/cache",					
+					"label": "CACHE_ROOT",
+					"name": "CACHE_ROOT"
+				},
+				{
+					"default":"8m",					
+					"label": "CACHE_SLICE_SIZE",
+					"name": "CACHE_SLICE_SIZE"
+				},
+				{
+					"default":"Europe/Istanbul",					
+					"label": "TimeZone",
+					"name": "TZ"
+				}
+			],
+			"logo": "https://avatars.githubusercontent.com/u/16938914?s=200&v=4",
+			"name": "lancache",
+			"note": "Lancache server",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "Template/Stack/lancache.yml",
+				"url": "https://github.com/mketizmen/portainer_templates"
+			},
+			"title": "LanCache",
+			"type": 3
+		},
 	]
 }
