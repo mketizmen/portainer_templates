@@ -4827,6 +4827,17 @@
           "default": true,
           "label": "USE_GENERIC_CACHE",
           "name": "USE_GENERIC_CACHE"
+	  "select": [
+	        {
+	          "text": "true",
+	          "value": true,
+	          "default": true
+	        },
+	        {
+	          "text": "false",
+	          "value": "false"
+	        }
+	      ],
         },
         {
           "default": "192.168.1.x",
