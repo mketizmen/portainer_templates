@@ -1,0 +1,20 @@
+---
+version: "2"
+services:
+  dns:
+    image: lancachenet/lancache-dns:latest
+    restart: unless-stopped
+    ports:
+      - ${DNS_BIND_IP}:53:53/udp
+      - ${DNS_BIND_IP}:53:53/tcp
+    dependson:
+      - monolithic
+  monolithic:
+    image: lancachenet/monolithic:latest
+    restart: unless-stopped
+    ports:
+      - 80:80/tcp
+      - 443:443/tcp
+    volumes:
+      - ${CACHE_ROOT}/cache:/data/cache
+      - ${CACHE_ROOT}/logs:/data/logs
