@@ -7,7 +7,7 @@ services:
     ports:
       - ${DNS_BIND_IP}:53:53/udp
       - ${DNS_BIND_IP}:53:53/tcp
-    dependson:
+    depends_on:
       - monolithic
   monolithic:
     image: lancachenet/monolithic:latest
