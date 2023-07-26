@@ -4824,7 +4824,7 @@
       "description": "Caches internet requests for network useage",
       "env": [
         {
-          "default": "true",
+          "default": true,
           "label": "USE_GENERIC_CACHE",
           "name": "USE_GENERIC_CACHE"
         },
@@ -4834,7 +4834,7 @@
           "name": "LANCACHE_IP"
         },
         {
-		  "default": "192.168.1.x",
+	  "default": "192.168.1.x",
           "label": "DNS_BIND_IP",
           "name": "DNS_BIND_IP"
         },
