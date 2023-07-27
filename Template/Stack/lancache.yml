@@ -4,6 +4,9 @@ services:
   dns:
     image: lancachenet/lancache-dns:latest
     restart: unless-stopped
+    environment:
+      - USE_GENERIC_CACHE=${USE_GENERIC_CACHE}
+      - LANCACHE_IP=${LANCACHE_IP}
     ports:
       - ${DNS_BIND_IP}:53:53/udp
       - ${DNS_BIND_IP}:53:53/tcp
@@ -12,6 +15,15 @@ services:
   monolithic:
     image: lancachenet/monolithic:latest
     restart: unless-stopped
+    environment:
+      - UPSTREAM_DNS=${UPSTREAM_DNS}
+      - CACHE_SLICE_SIZE=${CACHE_SLICE_SIZE}
+      - CACHE_MAX_AGE=${CACHE_MAX_AGE}
+      - TZ=${TZ}
+      - CACHE_INDEX_SIZE=CACHE_INDEX_SIZE
+      - CACHE_DISK_SIZE=CACHE_DISK_SIZE
+      - CACHE_DOMAINS_REPO=${CACHE_DOMAINS_REPO}
+      - CACHE_DOMAINS_BRANCH=${CACHE_DOMAINS_BRANCH}
     ports:
       - ${PORT}:80/tcp
       - ${SSLPORT}:443/tcp
