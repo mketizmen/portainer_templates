@@ -7,6 +7,13 @@ services:
     environment:
       - USE_GENERIC_CACHE=${USE_GENERIC_CACHE}
       - LANCACHE_IP=${LANCACHE_IP}
+      - TZ=${TZ}
+      - UPSTREAM_DNS=${UPSTREAM_DNS}
+      - LANG=${LANG}
+      - LANGUAGE=${LANG}
+      - LC_ALL=${LANG}
+      - CACHE_DOMAINS_REPO=${CACHE_DOMAINS_REPO}
+      - CACHE_DOMAINS_BRANCH=${CACHE_DOMAINS_BRANCH}
     ports:
       - ${DNS_BIND_IP}:53:53/udp
       - ${DNS_BIND_IP}:53:53/tcp
@@ -20,6 +27,9 @@ services:
       - CACHE_SLICE_SIZE=${CACHE_SLICE_SIZE}
       - CACHE_MAX_AGE=${CACHE_MAX_AGE}
       - TZ=${TZ}
+      - LANG=${LANG}
+      - LANGUAGE=${LANG}
+      - LC_ALL=${LANG}
       - CACHE_INDEX_SIZE=${CACHE_INDEX_SIZE}
       - CACHE_DISK_SIZE=${CACHE_DISK_SIZE}
       - CACHE_DOMAINS_REPO=${CACHE_DOMAINS_REPO}
