@@ -4844,12 +4844,12 @@
           "name": "LANCACHE_IP"
         },
 	{
-          "default": 80,
+          "default": "80",
           "label": "PORT",
           "name": "PORT"
         },
 	{
-          "default": 443,
+          "default": "443",
           "label": "SSLPORT",
           "name": "SSLPORT"
         },
