@@ -36,96 +36,117 @@ All templates are already configured to bind mount to various places on your dri
 * **Podcasts** - Where podcasts are stored/moved to after downloaded.
 ## App List
 
-- Adguard
-- Authelia
-- Guacamole
-- Homer
-- Wikijs
-- Bazarr
-- Jellyfin
-- Bitwarden_rs
-- Pi-Hole
-- Whoogle
-- Mstream
-- Filebrowser
-- YouTubeDL-Material
-- DashMachine
-- Reactive-Resume
-- LibreSpeed
-- DeeMix
-- Nginx Proxy Manager
-- Organizrv2
-- TiddlyWiki
-- Watchtower
-- transmission-openvpn
-- airsonic
-- beets
-- booksonic
-- bookstack
-- calibre-web
-- Chevereto
-- codiad
-- cops
-- couchpotato
-- daapd
-- davos
-- deluge
-- domoticz
-- duckdns
-- duplicati
-- freshrss
-- gazee
-- headphones
-- heimdall
-- htpcmanager
-- jackett
-- kodi-headless
-- lazylibrarian
-- letsencrypt / SWAG
-- libresonic
-- lidarr
-- lychee
-- mariadb
-- mcmyadmin
-- medusa
-- minetest
-- minisatip
-- musicbrainz
-- muximux
-- mylar
-- nextcloud
-- nginx
-- nzbget
-- nzbhydra
-- ombi
-- openvpn-as
-- oscam
-- photoshow
-- piwigo
-- plex
-- plexrequests
-- projectsend
-- pydio
-- qbittorrent
-- quassel-core
-- radarr
-- resilio-sync
-- rutorrent
-- sabnzbd
-- sickchill
-- smokeping
-- sonarr
-- syncthing
-- tautulli
-- thelounge
-- transmission
-- tt-rss
-- tvheadend
-- ubooquity
-- unifi
-- webgrabplus
-- znc
-- Yacht
+  - Adguard 
+  - Airsonic 
+  - ArchiSteamFarm
+  - Authelia
+  - Bazarr 
+  - Beets 
+  - Vaultwarden 
+  - Booksonic 
+  - Cops 
+  - Calibre-web 
+  - Chevereto 
+  - Chowdown 
+  - Code-server 
+  - Codiad 
+  - Couchpotato 
+  - Daapd 
+  - Dashmachine 
+  - Davos 
+  - Deemix 
+  - Domoticz 
+  - Duckdns 
+  - Duplicati 
+  - Emby 
+  - EmbyStat 
+  - Filebrowser 
+  - Freshrss 
+  - Gazee 
+  - Gitea
+  - Guacamole 
+  - Grocy 
+  - Htpcmanager 
+  - Headphones 
+  - Heimdall 
+  - Homer 
+  - Huginn 
+  - Invoice_ninja 
+  - Jackett 
+  - Jellyfin
+  - Jellyseerr
+  - kodi-headless 
+  - Lazylibrarian 
+  - Letsencrypt / SWAG 
+  - Librespeed 
+  - Lidarr 
+  - Lychee
+  - Mariadb 
+  - Mcmyadmin2 
+  - Medusa 
+  - Minetest 
+  - Minisatip 
+  - Mstream 
+  - Murmur 
+  - Musicbrainz 
+  - Muximux 
+  - Mylar 
+  - Nzbget 
+  - Nzbhydra2 
+  - Nextcloud 
+  - Nginx 
+  - Nginx-proxy-manager 
+  - Oscam 
+  - Ombi 
+  - Openvpn-as 
+  - Organizr-v2 
+  - Overseerr 
+  - Owncloud 
+  - Passky Client 
+  - Passky Server 
+  - Petio 
+  - Photoshow 
+  - Pihole 
+  - Piwigo 
+  - Plex 
+  - Plexrequests 
+  - Projectsend 
+  - Protonmail-bridge 
+  - Prowlarr 
+  - Pydio 
+  - Qbittorrent 
+  - Quassel-core 
+  - Radarr 
+  - Reactive-resume 
+  - Resilio-sync 
+  - Rutorrent 
+  - Sabnzbd 
+  - Shiori 
+  - Sickchill 
+  - Sickgear 
+  - Smokeping 
+  - Snibox 
+  - Sonarr 
+  - Syncthing 
+  - Tautulli 
+  - Thelounge 
+  - Tiddlywiki 
+  - Tt-rss 
+  - Transmission 
+  - Transmission-openvpn 
+  - Tvheadend 
+  - Twitch Points Miner
+  - Ubooquity 
+  - Unifi-controller 
+  - Uptime Kuma
+  - Watchtower 
+  - Webgrabplus 
+  - Whoogle 
+  - Wikijs 
+  - Yacht 
+  - Youtubedl-material 
+  - Znc 
+
 
 ## Contributing
 
@@ -136,6 +157,7 @@ If you wish to contribute make a pull request, create an issue, or email me.
 * **SelfhostedPro** - *Current Work* - [SelfhostedPro](https://github.com/SelfhostedPro)
 * **Jos Visser** - *Initial work* - [Qballjos](https://github.com/Qballjos)
 * **xe-nvdk** - *template conversion to portainer V2* - [xe-nvdk](https://github.com/xe-nvdk)
+* **tbiering** - *Termplate cleanup and typo fixes* - [tbiering](https://github.com/tbiering)
 
 See also the list of [contributors](https://github.com/Qballjos/portainer_templates/graphs/contributors) who participated in this project.
 
