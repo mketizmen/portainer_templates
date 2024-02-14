@@ -4919,6 +4919,27 @@
       },
       "title": "LanCache",
       "type": 3
+    },
+    {
+      "categories": ["webserver"],
+      "description": "python 3 alpine server",
+      "image": "python:3-alpine",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+      "name": "python",
+      "platform": "linux",
+      "ports": ["8081:8081/tcp"],
+      "network": "bridge",
+      "restart_policy": "unless-stopped",
+      "title": "python",
+      "type": 1,
+      "interactive": true,
+      "command": "cd /home/app|run --allow-net /app/main.ts",
+      "volumes": [
+        {
+          "bind": "/app",
+          "container": "/home/app"
+        }
+      ]
     }
   ]
 }
