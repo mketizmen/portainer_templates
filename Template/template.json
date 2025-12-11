@@ -4862,8 +4862,8 @@
           "default": "1.1.1.1",
           "label": "UPSTREAM_DNS",
           "name": "UPSTREAM_DNS"
-        },	
-	{
+        },
+		  {
 		"default":"https://github.com/uklans/cache-domains.git",
 		"label":"CACHE_DOMAINS_REPO",
 		"name":"CACHE_DOMAINS_REPO"
@@ -4873,7 +4873,7 @@
 		"label":"CACHE_DOMAINS_BRANCH",
 		"name":"CACHE_DOMAINS_BRANCH"
 	},
-        {
+		  {
           "default": "1000g",
           "label": "CACHE_DISK_SIZE",
           "name": "CACHE_DISK_SIZE"
@@ -4899,11 +4899,11 @@
           "name": "CACHE_SLICE_SIZE"
         },
         {
-          "default": "Europe/Istanbul",
+			"default": "Europe/Istanbul",
           "label": "TimeZone",
           "name": "TZ"
         },
-	{
+		  {
           "default": "en_GB.UTF-8",
           "label": "Language",
           "name": "LANG"
