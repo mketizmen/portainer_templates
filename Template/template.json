@@ -4829,12 +4829,12 @@
 	  "select": [
 	        {
 	          "text": "true",
-	          "value": true,
-	          "default": true
+	          "value": "true",
+	          "default": "true"
 	        },
 	        {
 	          "text": "false",
-	          "value": false
+	          "value": "false"
 	        }
 	      ]
         },
