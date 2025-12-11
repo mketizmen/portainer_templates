@@ -4583,7 +4583,7 @@
           "name": "WEBUI_PORT_ENV"
         },
         {
-          "default": 6881,
+          "default": "6881",
           "label": "INCOMING_PORT_ENV",
           "name": "INCOMING_PORT_ENV"
         },
