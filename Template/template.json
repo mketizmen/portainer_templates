@@ -4640,7 +4640,7 @@
           "name": "SANED_DLL"
         },
         {
-          "default": 2,
+          "default": "2",
           "label": "SANED_LOG_LEVEL",
           "name": "SANED_LOG_LEVEL"
         }
